@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Get Info{% endblock title %}</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: 2rem auto; padding: 0 1rem; }
+    form div { margin-bottom: 1rem; }
+    label { display: block; font-weight: bold; }
+    input, textarea { width: 100%; padding: 0.4rem; box-sizing: border-box; }
+    .errorlist { color: #b00; margin: 0; padding-left: 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="{% url 'get_info' %}">Get Info Lab</a>
+  </header>
+  <main>
+    {% block content %}{% endblock content %}
+  </main>
+</body>
+</html>

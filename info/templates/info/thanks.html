@@ -1,0 +1,9 @@
+{% extends "info/base.html" %}
+
+{% block title %}Thank You{% endblock title %}
+
+{% block content %}
+  <h1>Thank You</h1>
+  <p>We received your information and will be in touch soon.</p>
+  <p><a href="{% url 'get_info' %}">Submit another request</a></p>
+{% endblock content %}

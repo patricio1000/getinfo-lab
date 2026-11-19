@@ -1,0 +1,13 @@
+{% extends "info/base.html" %}
+
+{% block title %}Request Info{% endblock title %}
+
+{% block content %}
+  <h1>Request Info</h1>
+  <p>Tell us how to reach you and what you would like to know.</p>
+  <form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Submit</button>
+  </form>
+{% endblock content %}
